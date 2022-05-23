@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Uber-Cy-Lyft</string>
+    <string name="Forgot_Password"><u>Forgot password?</u></string>
+    <string name="app_Email">Email</string>
+    <string name="app_Password">Password</string>
+    <string name="app_Sign_In">Sign In</string>
+    <string name="app_Register">Register</string>
+
+    <string name="app_First_Name">First Name</string>
+    <string name="app_Last_Name">Last Name</string>
+    <string name="app_Phone_Number">Phone Number</string>
+    <string name="app_Address">Address</string>
+    <string name="State">State</string>
+    <string name="ZIP">ZIP</string>
+    <string name="Rider_Registration">Rider Registration</string>
+    <string name="Driver_Registration">Driver Registration</string>
+
+    <string name="Registration_Option">Are you registering as a Driver or Rider?</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_select_ride_start">SelectRideStart</string>
+    <string name="title_activity_search_ride_start">SearchRideStart</string>
+    <string name="response" />
+
+</resources>

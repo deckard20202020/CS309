@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driver.HomePage">
+
+    <Button
+        android:id="@+id/driverRidesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewCreatedRides"
+        android:text="My Trips"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/driverProfileButton"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:onClick="profileSettings"
+        android:text="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/driverReviewsButton"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:onClick="viewReviews"
+        android:text="Reviews"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/createRideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createRide"
+        android:text="Create a Trip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signOut"
+        android:text="Sign out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <ImageView
+        android:id="@+id/driverProfilePic"
+        android:layout_width="150dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@android:drawable/screen_background_light" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+<!--    Need this for testing, but it breaks pipeline. Also, it completely breaks production. -->
+<!--    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"-->
+<!--        tools:ignore="MockLocation,ProtectedPermissions" />-->
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".rider.OngoingTrip"
+            android:exported="false" />
+        <activity
+            android:name=".driver.OngoingTrip"
+            android:exported="false" />
+        <activity
+            android:name=".driver.TripDetail"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDmvxGMTWWetUCbk92F4hcCjNtY-0UhyaM" />
+
+        <activity
+            android:name=".rider.Reviews"
+            android:exported="false" />
+        <activity
+            android:name=".driver.Reviews"
+            android:exported="false" />
+
+        <activity
+            android:name=".driver.completetrip.RateRider"
+            android:exported="false" />
+        <activity
+            android:name=".rider.completetrip.RateDriver"
+            android:exported="false" />
+        <activity
+            android:name=".driver.completetrip.TripCompleted"
+            android:exported="false" />
+        <activity
+            android:name=".rider.TripsList"
+            android:exported="false"
+            android:parentActivityName=".rider.HomePage" />
+        <activity
+            android:name=".rider.searchtrip.ViewTripInfo"
+            android:exported="false"
+            android:parentActivityName=".rider.searchtrip.SearchPage" />
+        <activity
+            android:name=".rider.searchtrip.SearchPage"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UsersList"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TripsList"
+            android:exported="false" />
+        <activity
+            android:name=".admin.HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".driver.TripsList"
+            android:exported="false" />
+        <activity
+            android:name=".driver.HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".driver.createtrip.ConfirmTrip"
+            android:exported="false" />
+        <activity
+            android:name=".driver.createtrip.SelectTripPlace"
+            android:exported="false"
+            android:label="@string/title_activity_select_ride_start" />
+        <activity
+            android:name=".driver.createtrip.SelectTripTime"
+            android:exported="false" />
+        <activity
+            android:name=".rider.searchtrip.SearchTripPlace"
+            android:exported="false"
+            android:label="@string/title_activity_search_ride_start" />
+        <activity
+            android:name=".rider.searchtrip.SearchTripTime"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileSettings"
+            android:exported="false" />
+        <activity
+            android:name=".rider.RegistrationPage"
+            android:exported="false" />
+        <activity
+            android:name=".driver.RegistrationPage"
+            android:exported="false" />
+        <activity
+            android:name=".rider.HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationOptions"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

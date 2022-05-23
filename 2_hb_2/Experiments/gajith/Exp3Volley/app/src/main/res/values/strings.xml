@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test App</string>
+    <string name="my_string">Next</string>
+    <string name ="enter_string">Enter</string>
+    <string name="name_string">Enter value between 1-4</string>
+    <string name="output_string">Your name will pop up here. Click next to confirm.</string>
+</resources>

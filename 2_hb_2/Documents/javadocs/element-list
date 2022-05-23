@@ -1,0 +1,8 @@
+com.example.myapplication
+com.example.myapplication.admin
+com.example.myapplication.app
+com.example.myapplication.driver
+com.example.myapplication.driver.createtrip
+com.example.myapplication.endpoints
+com.example.myapplication.rider
+com.example.myapplication.rider.searchtrip

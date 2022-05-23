@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rider.RegistrationPage">
+
+    <TextView
+        android:id="@+id/chatWithRiderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EC4F4F"
+        android:backgroundTint="#F8ACAC"
+        android:fontFamily="casual"
+        android:text="@string/Rider_Registration"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/regStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EC4F4F"
+        android:backgroundTint="#F8ACAC"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/app_First_Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/app_Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chatWithRiderTV"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <Button
+        android:id="@+id/registerRiderButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#D62929"
+        android:onClick="registerRider"
+        android:text="@string/app_Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/app_Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <EditText
+        android:id="@+id/editTextState"
+        android:layout_width="76dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/State"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="76dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/app_Address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <EditText
+        android:id="@+id/editTextZip"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/ZIP"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/app_Phone_Number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/app_Last_Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
